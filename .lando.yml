@@ -1,5 +1,5 @@
 name: my-lando-app
 recipe: drupal9
 config:
-  webroot: web
+  webroot: .
   xdebug: true
