@@ -6,4 +6,4 @@ tasks:
     init: |
       lando start
       lando composer install
-      lando drush cr
+      gp preview $(gp url $(lando info --format=json | jq -r ".[0].urls[1]" | sed -e 's#http://localhost:\(\)#\1#'))
