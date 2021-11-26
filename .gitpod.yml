@@ -6,3 +6,4 @@ tasks:
     init: |
       lando start
       lando composer install
+      lando drush cr
